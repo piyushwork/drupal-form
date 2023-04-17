@@ -1,0 +1,16 @@
+form.myform:
+  path: '/myform'
+  defaults:
+    _form: '\Drupal\form\Form\MyForm'
+    _title: 'My Form'
+    _controller: '\Drupal\form\Controller\FormControl::display'
+  requirements:
+    _permission: 'access content'
+
+form.my_route:
+  path: '/my_route'
+  defaults:
+    _controller: '\Drupal\form\Controller\FormControl::myView'
+    _title: 'My View'
+  requirements:
+    _permission: 'access content'
